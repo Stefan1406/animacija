@@ -1,0 +1,68 @@
+body {
+    background-color: #050210;
+}
+.prvi::before {
+    content: "";
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    height: 450px;
+    width: 450px;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(45px);
+}
+.prvi {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    margin: 0 auto;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 1s infinite linear;
+    position: relative;
+    
+}
+
+.drugi {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: #050210;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.treci {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background-color: rgba(15, 14, 14, 0.685);
+    animation: scale 1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
